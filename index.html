@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monisha Anand | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f7f8fc;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #ffffff;
+      padding: 16px 8%;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav h2 { color: #5b4bdb; }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    nav a:hover { color: #5b4bdb; }
+    section { padding: 70px 8%; }
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #eeeaff, #ffffff);
+    }
+    .hero h1 { font-size: 48px; margin-bottom: 10px; }
+    .hero h1 span { color: #5b4bdb; }
+    .hero h3 { font-size: 24px; margin-bottom: 15px; }
+    .hero p { max-width: 650px; font-size: 18px; color: #555; }
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 22px;
+      background: #5b4bdb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .btn:hover { background: #4637bd; }
+    .title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 35px;
+      color: #333;
+    }
+    .about, .contact-box {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+      color: #555;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .skill, .project {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.07);
+    }
+    .skill { text-align: center; font-weight: bold; }
+    .project h3 { color: #5b4bdb; margin-bottom: 10px; }
+    .project p { color: #555; }
+    .project a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #5b4bdb;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #222;
+      color: white;
+    }
+    @media (max-width: 650px) {
+      nav { flex-direction: column; gap: 10px; }
+      nav a { margin: 0 7px; font-size: 14px; }
+      .hero h1 { font-size: 36px; }
+      section { padding: 55px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>Monisha</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>Hi, I'm <span>Monisha Anand</span></h1>
+      <h3>B.Sc Computer Science Student | Aspiring Software Developer</h3>
+      <p>
+        I am a passionate Computer Science student interested in software development,
+        AI, web development and building practical projects that solve real-world problems.
+      </p>
+      <a class="btn" href="#projects">View My Projects</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="title">About Me</h2>
+    <div class="about">
+      <p>
+        I am a B.Sc Computer Science student with a foundation in Python, Java, SQL,
+        web development and data structures. I enjoy learning new technologies,
+        developing projects and improving my problem-solving skills. I am currently
+        looking for opportunities to gain industry experience and grow as a software developer.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="title">Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">SQL</div>
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">React.js</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Data Structures</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="projects">
+
+      <div class="project">
+        <h3>AI Resume Analyzer</h3>
+        <p>
+          A Streamlit-based application that analyzes resumes, extracts skills,
+          calculates ATS scores, matches resumes with job requirements and identifies missing skills.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Animated Weather App</h3>
+        <p>
+          A web application that displays weather information with an interactive
+          and animated user interface.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>College ERP Frontend</h3>
+        <p>
+          A React.js frontend project designed to provide a user-friendly interface
+          for college-related academic and administrative activities.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="title">Internship</h2>
+    <div class="about">
+      <p>
+        <strong>Vnet Technologies</strong> — Python with AI Intern
+      </p>
+      <p>
+        Gained practical exposure to Python and AI concepts while working on
+        project-based tasks and developing technical skills.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="title">Contact</h2>
+    <div class="contact-box">
+      <p>Email: YOUR_EMAIL@gmail.com</p>
+      <p>GitHub: <a href="YOUR_GITHUB_URL" target="_blank">My GitHub</a></p>
+      <p>LinkedIn: <a href="YOUR_LINKEDIN_URL" target="_blank">My LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Monisha Anand. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
